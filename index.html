@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..700;1,300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#ffe9e2", "tertiary-fixed-dim": "#e3bfb1", "inverse-primary": "#fbb79d", "primary-container": "#c98b73", "on-primary-fixed": "#341003", "on-secondary-fixed": "#002112", "surface-bright": "#fff8f6", "on-tertiary-fixed": "#2a170f", "on-surface": "#251914", "surface": "#fff8f6", "secondary": "#2c694c", "on-secondary-fixed-variant": "#0e5135", "secondary-container": "#b0f1cb", "on-tertiary-fixed-variant": "#5a4137", "on-secondary-container": "#337051", "on-tertiary": "#ffffff", "tertiary-fixed": "#ffdbcd", "primary": "#85513c", "tertiary": "#74584d", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#693a27", "surface-variant": "#f6ddd5", "error": "#ba1a1a", "on-error": "#ffffff", "outline-variant": "#d7c2bb", "on-secondary": "#ffffff", "surface-container-highest": "#f6ddd5", "secondary-fixed-dim": "#95d4b0", "tertiary-container": "#b39386", "on-primary": "#ffffff", "on-error-container": "#93000a", "secondary-fixed": "#b0f1cb", "surface-tint": "#85513c", "on-background": "#251914", "surface-dim": "#edd5cd", "on-primary-container": "#502614", "on-surface-variant": "#52443f", "surface-container-high": "#fce3db", "primary-fixed-dim": "#fbb79d", "on-tertiary-container": "#432c23", "primary-fixed": "#ffdbce", "inverse-surface": "#3c2d28", "error-container": "#ffdad6", "inverse-on-surface": "#ffede7", "outline": "#84736e", "surface-container-low": "#fff1ec", "background": "#fff8f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "space-xs": "0.375rem", "space-md": "1.25rem", "margin": "3rem", "space-lg": "2rem", "margin-tablet": "2rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-xl": "3.5rem", "gutter": "1.5rem" }, fontFamily: { "headline-sm": ["Playfair Display"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "display-hero-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(42,29,24,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Nails by Dani</span><span class="hidden">Inicio</span></div><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center min-h-[44px] px-space-md py-space-xs bg-primary-container text-on-primary font-label-md text-label-md rounded-lg uppercase tracking-wider transition-colors hover:bg-primary" data-path="agendar-cita" href="#reservas">Agendar</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. Encabezado simple -->
+<section class="px-margin-mobile py-space-md flex items-center justify-between bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Nails by Dani</span>
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mt-0.5">Estudio de Uñas · Zapopan</span>
+</div>
+<a class="inline-flex items-center justify-center px-space-md py-space-xs bg-primary-container text-on-primary font-label-md text-label-md rounded-lg uppercase tracking-wider shadow-sm transition-transform active:scale-95" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+      Agendar
+    </a>
+</section>
+<!-- 2. Portada (Hero) -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up editorial photography of elegant feminine hands resting gently on a raw linen fabric. The nails are perfectly sculpted in a natural almond shape with a pristine warm nude and milky glazed gel manicure, subtle terracotta micro-detail near the cuticle. Warm morning sunlight, soft organic shadows, beige and terracotta color palette, minimal luxury beauty editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSsyuc9B2fQPZzX48CuUCvSzjsaQFxGl21DBE4B7Bkj3T5IFpt2xbW8Fy5N5sKCEQPgHCsOAXXTvKVovFRkRteEhDwDgNkyF9ZdBFu1T2KYFHOke8doKOGvi1ba7PyLn9WKxq4jP-gegtY5UtbnHt-ZBUsxvtFo1v-g2bRhiDmAq26hIGtvbXjeROuEUHWGmUC_npp6ZUcpnE3che3zOla2wEExKcY4Grd_YZwEnw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-md flex flex-col text-surface-container-lowest">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed mb-1">Boutique Atelier</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-container-lowest leading-tight">Uñas que se notan</h1>
+</div>
+</div>
+<div class="mt-space-md flex flex-col gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface-variant font-light">
+        Gel, acrílico y diseños a tu estilo, solo con cita.
+      </p>
+<a class="w-full flex items-center justify-center gap-space-xs py-space-md px-space-lg rounded-xl bg-secondary text-on-secondary font-title-md text-title-md shadow-md transition-all active:scale-[0.98]" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 2C6.511 2 2.024 6.488 2.024 12.008c0 1.839.502 3.565 1.378 5.062L2 22l5.062-1.33a9.96 9.96 0 0 0 4.969 1.338h.004c5.517 0 10.007-4.488 10.007-10.008C22.042 6.488 17.551 2 12.031 2zm0 18.293a8.27 8.27 0 0 1-4.223-1.155l-.303-.18-3.137.823.837-3.06-.197-.314a8.277 8.277 0 0 1-1.272-4.399c0-4.57 3.717-8.288 8.292-8.288 2.215 0 4.298.863 5.864 2.43a8.23 8.23 0 0 1 2.427 5.863c-.001 4.572-3.722 8.289-8.288 8.289zm4.542-6.208c-.248-.124-1.472-.726-1.7-.809-.228-.083-.394-.124-.56.124-.166.248-.643.809-.788.975-.145.166-.29.186-.539.062-.248-.124-1.049-.386-1.998-1.233-.739-.659-1.238-1.474-1.383-1.722-.145-.248-.016-.382.108-.506.112-.111.248-.29.373-.435.124-.145.166-.248.248-.415.083-.166.042-.311-.021-.435-.062-.124-.56-1.35-.768-1.85-.202-.486-.407-.42-.56-.427l-.477-.008c-.166 0-.435.062-.663.311-.228.248-.871.851-.871 2.075 0 1.224.892 2.407 1.016 2.573.125.166 1.756 2.682 4.254 3.762.594.257 1.058.411 1.42.526.597.19 1.141.163 1.571.099.479-.071 1.472-.602 1.68-1.183.207-.581.207-1.079.145-1.183-.062-.104-.228-.166-.477-.29z"></path>
+</svg>
+<span>Agenda tu cita por WhatsApp</span>
+</a>
+</div>
+</section>
+<!-- 3. Servicios con precio -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-low flex flex-col" id="servicios">
+<div class="flex flex-col mb-space-lg">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-1">Cuidado Dedicado</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Nuestros Servicios</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Atención exclusiva e individualizada en cada sesión. Tiempos sin prisa para cuidar la salud de tu uña natural.
+      </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Servicio 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-title-lg text-title-lg text-on-surface">Manicura en gel</h3>
+<span class="font-title-md text-title-md text-primary font-medium">Desde $250</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+          Incluye preparación rusa suave, nivelación y esmaltado en gel de larga duración.
+        </p>
+</div>
+<!-- Servicio 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-title-lg text-title-lg text-on-surface">Acrílicas</h3>
+<span class="font-title-md text-title-md text-primary font-medium">Desde $380</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+          Estructura estética con técnica escultural o tip, largo a elección y acabado natural.
+        </p>
+</div>
+<!-- Servicio 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-title-lg text-title-lg text-on-surface">Diseños personalizados</h3>
+<span class="font-title-md text-title-md text-primary font-medium">Desde $50 extra</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+          Mano alzada, efectos chrome, relieve 3D o trazos franceses modernos adaptados a ti.
+        </p>
+</div>
+<!-- Servicio 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-title-lg text-title-lg text-on-surface">Retiro y mantenimiento</h3>
+<span class="font-title-md text-title-md text-primary font-medium">Desde $120</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+          Cuidado respetuoso de la uña natural, hidratación profunda y pulido regenerativo.
+        </p>
+</div>
+</div>
+<div class="mt-space-lg text-center">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:text-on-primary-container transition-colors py-2" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span>Consultar diseño previo por WhatsApp</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- 4. Galería grande de diseños -->
+<section class="px-margin-mobile py-space-xl flex flex-col" id="lookbook">
+<div class="flex flex-col mb-space-lg">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-1">Portafolio de Autor</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Galería de Diseños</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Una muestra de nuestras creaciones recientes en estudio.
+      </p>
+</div>
+<!-- Cuadrícula de 9 fotos cuidada -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- 1 -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Macro portrait photo of minimalist nude manicured nails with a subtle pearl sheen gloss finish. Soft clean lighting, warm beige aesthetic, clean natural cuticles, luxury nail art portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-5dent1nnOu3PFqY7DeUS8st3p57iFZ_w2FbHhmu8Q8BZOpSDJbdKofrJQw-iWaz6U7Kf_zKF0BlVeVUHL2qPzZ_8xbOzJIekUJeQKQ3Zr6i5X_bp_ne5infcO9m135X7039Tih6lTX7yBCa0O1h5WBBlRXipYodBgIgauG2P2CTPhrkS32GYEW01Ipgo-5Tka-H5Yla1QAMqAx1565gqXOUCR6yQSAcGk3TTXlM"/>
+<div class="absolute inset-x-0 bottom-0 p-2 bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-label-sm text-label-sm text-surface-container-lowest font-medium truncate">Nude Minimalista Perlado</p>
+</div>
+</div>
+<!-- 2 -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Editorial close up of hands showing a modern French manicure with an ultra fine micro line in terracotta tone on a translucent sheer base. Natural warm light, earthy aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOtEJJLIoeBsM1yVGFr-SkzPik7oyQ-T9miNfIw7xQcEizxdgPGBTy_CPzzh3pz_xoiec_Knj6PutxMvXUrl2546N8TJ0w8qlnCiTNok-wLo7FMdGbdywiwaYYIXF84TU8MvESZ6eACjcHrhRbNCejDDZD08tAYcQoxV8pE2oRq8bBLENqsTSpsaBepZZFAxsGMb2mlFkLK9E7IKKBMGo5A2EG_f_Ial1tDHh6HRE"/>
+<div class="absolute inset-x-0 bottom-0 p-2 bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-label-sm text-label-sm text-surface-container-lowest font-medium truncate">Francés Micro Terracota</p>
+</div>
+</div>
+<!-- 3 -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Sophisticated nail set painted in earthy matte tones and warm cafe latte gradients. Soft velvet tactile finish, high-end nail salon in Zapopan, clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAktsNijdVtaBBZQnl7NdaKeYD8z2Wg2WEI5wwAQpLHls8gMoBitR8VukmMRekURo2YpsS2Ie0WrLxHIC6MAVSiJFvahIMCBpe8xVSsx1i2rR4NikOJyqFXJIXL_wljPc6sqtwFs0-iud8U47t6lzJpk3xGnqsw_P_9H72sMbEfnI26hT5Fs33LGsXK5DyXWP8Kg7Cg-vmWrQ8iDfpfZiYCJDCsSFdq1CWsYt5AVCE"/>
+<div class="absolute inset-x-0 bottom-0 p-2 bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-label-sm text-label-sm text-surface-container-lowest font-medium truncate">Tonos Tierra y Latte Mate</p>
+</div>
+</div>
+<!-- 4 -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Almond shaped manicured nails with delicate tiny crystal embellishments placed with restraint on natural nude base. Tasteful luxury, soft ceramic textured backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN2eNWMzwSxj_Y6ibd7hQmlI81YeqPqd9IF-ZQg1hciqUcxQxR-erdIemUtCOgTnP6MblG-_rYfNxO-6MJXtZWoz8PH9Y6wIuxY0txIWwxtOsU_jIfHlKK_hF0Y880xjIDhun_XpVc3CRo472s_e975NHbWnIRqsv46KXHmamqmJytwF_YWp9bWMThxJXRL1ObB0-cF1AcY_opAp0h0P1cUC67viMXIS2MxsKVPEQ"/>
+<div class="absolute inset-x-0 bottom-0 p-2 bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-label-sm text-label-sm text-surface-container-lowest font-medium truncate">Almendradas con Cristales</p>
+</div>
+</div>
+<!-- 5 -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Hand painted abstract geometric fine line art on manicured nails. Espresso brown and terracotta curves on sheer porcelain gel background. Artistic craft, minimalist salon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwQKm50OX2m5EYm1XuZBoXZXEq7X_b9o5u2_L_402IncJOO05A8nO_eb_5p0jOgYe6rWiyQlNy9rztuLqLo22Vxulrs2-GINBh_pPEnBn2DkjLCfunoOfrbk8EOrqYANfC1tiiLejA9N0DIXimiqJdsHxLiijOBn-cG4gnz7TNMqMiYiQ6aTEDfNs4TFHyzjjd-cscL0WnHMJaU-sHpPGwS6mZKp2Y1K1Wv8dyjTU"/>
+<div class="absolute inset-x-0 bottom-0 p-2 bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-label-sm text-label-sm text-surface-container-lowest font-medium truncate">Geométrico Abstracto</p>
+</div>
+</div>
+<!-- 6 -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Sunlit glazed donut chrome nails glistening softly under natural afternoon window light. Clean milky chrome overlay on clean sculpted nail plates, high editorial beauty." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBveF5zua7DHNrwbL4W6rTy-aepHnE2brTN48KOIEVexYq2wS-AhQygg-LeFyBu8-nhR3eEk503BzFkPbdBGRfJzhPJ0_McbVv8EYcTT0YoqSflB_yo4eZhibfSn0G79-IBkP0xX3bkt8kMJTIZO9NAt5MoPPnTG8IH4cCbfxVf2znzGkuCZNENJwodWh2QMvvoo6usWLh3EhypPIpbLSh_QfPYpJMICiFBRsutvE4"/>
+<div class="absolute inset-x-0 bottom-0 p-2 bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-label-sm text-label-sm text-surface-container-lowest font-medium truncate">Glazed Donut Luz Natural</p>
+</div>
+</div>
+<!-- 7 -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Classic deep dark cherry red glossy manicured nails on fair skin. Impeccable Russian cuticle work, deep wine burgundy lacquer, timeless editorial elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1RiNaMGH7KoC7f7KQ_3bc9C44tJK-ntNJufw-j3Osvc2EWdi1lril_g65bnWVpeMatVAGAcqYSbJPEJ2jv0sPlUpI854Yjh-DI8myk3zocg7FTqVqJ52GTIfxOIGJGxy4NCVFAjhFr5zcXg7uSAkOr-5ll4TwWoKWuvez72PRH7YWb3vYtFZjfCjJT5HQJWz-DwR6T80Mri34CGJMDVMr7WUva7r6Xk6nJcFX0SQ"/>
+<div class="absolute inset-x-0 bottom-0 p-2 bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-label-sm text-label-sm text-surface-container-lowest font-medium truncate">Rojo Cereza Profundo</p>
+</div>
+</div>
+<!-- 8 -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Detailed micro-art on short natural nails. Tiny botanical single line leaf sketches in dark brown ink on sheer peach base. Natural organic nail care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2iRQ_j9JMyIUypQJEAXtczoxOsU3XzoJ5mNZIuYVZV4HnYAtwgM0O5rVe6pan0_uoX94iwlFXWOwaHCgm95tMDoMlhLmrOVMFMZk2Si6GV1kqyvXNI1t1yFD_9EIYiytNSTs5XqCNNADvA4-T_TL8AHDgCwIKkS5NT8xU_rjkGCyUK4k_xvE-Z0_NQ91syCDz8x5YFTt5RvH36iog1IiqJASBC5Lq6_-KxMzWzHM"/>
+<div class="absolute inset-x-0 bottom-0 p-2 bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-label-sm text-label-sm text-surface-container-lowest font-medium truncate">Micro-art Uña Natural</p>
+</div>
+</div>
+<!-- 9 (Span full width en grid 2 cols para balance armonioso) -->
+<div class="col-span-2 relative aspect-[2/1] rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Wide perspective shot of elegant hands showing soft sculpted baby boomer acrylic ombré nails blending seamlessly from rosy terracotta pink into soft milky white tips. Gentle linen textile backdrop, soft warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwwnmlwiqXc8FeMbhJa872N0p7hfV7MgSAv-qodVxf0Ijzs2MYFirLRvWKJ-24M2wJh3PvkwvvseFrinLvhk7xWH_06NWKp-uJnUS_shnAOWVBNZ3CuE8qIuYMCDSvV5jSNBgXubJm_QfZBRn_sB-ih45cGrnzv3LUJsieTNowxM7O3aOPKKPNWw0E6SeMTunSKsrbWY9ubilEbKqxbDFUndPDOLNZ4r7Kx2T0sjM"/>
+<div class="absolute inset-x-0 bottom-0 p-space-sm bg-gradient-to-t from-on-surface/70 to-transparent">
+<p class="font-title-md text-title-md text-surface-container-lowest font-medium">Acrílico Escultural · Baby Boomer Suave</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. "Cómo agendar" -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-low flex flex-col">
+<div class="flex flex-col mb-space-lg">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-1">Paso a Paso</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Cómo agendar tu cita</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Un proceso transparente para reservar tu momento de calma.
+      </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Paso 01 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-primary">01</span>
+<h3 class="font-title-md text-title-md text-on-surface">Escoge tu diseño</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light pl-8">
+          Revisa nuestra galería o ten lista una foto de referencia del estilo que te gustaría.
+        </p>
+</div>
+<!-- Paso 02 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-primary">02</span>
+<h3 class="font-title-md text-title-md text-on-surface">Mándanos un WhatsApp</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light pl-8">
+          Escríbenos para consultar fechas disponibles, cotizar tu diseño y apartar tu espacio.
+        </p>
+</div>
+<!-- Paso 03 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-primary">03</span>
+<h3 class="font-title-md text-title-md text-on-surface">Llega a tu cita</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light pl-8">
+          Te esperamos en nuestro estudio en Zapopan para consentirte con café y una experiencia relajante.
+        </p>
+</div>
+</div>
+</section>
+<!-- 6. Opiniones de clientas -->
+<section class="px-margin-mobile py-space-xl flex flex-col">
+<div class="flex flex-col mb-space-lg">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-1">Experiencias</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Lo que dicen nuestras clientas</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        La confianza de quienes ponen sus manos en nuestro estudio.
+      </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Testimonio 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col">
+<span class="font-headline-lg text-primary/40 leading-none h-6 select-none">“</span>
+<p class="font-body-md text-body-md text-on-surface italic mt-2">
+          La manicura en gel me duró más de tres semanas intacta. El detalle y la delicadeza con que trabaja Dani es insuperable.
+        </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Sofía Morales</span>
+<span class="font-label-sm text-label-sm text-primary">Clienta frecuente</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col">
+<span class="font-headline-lg text-primary/40 leading-none h-6 select-none">“</span>
+<p class="font-body-md text-body-md text-on-surface italic mt-2">
+          El estudio tiene una vibra deliciosa, súper tranquilo y limpio. Mis uñas acrílicas quedaron exactamente como la foto que llevé.
+        </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Camila Navarro</span>
+<span class="font-label-sm text-label-sm text-primary">Diseño escultural</span>
+</div>
+</div>
+<!-- Testimonio 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col">
+<span class="font-headline-lg text-primary/40 leading-none h-6 select-none">“</span>
+<p class="font-body-md text-body-md text-on-surface italic mt-2">
+          Por fin encontré un lugar en Zapopan donde cuidan la salud de tu uña natural además de dejar diseños hermosos.
+        </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Renata Lozano</span>
+<span class="font-label-sm text-label-sm text-primary">Cuidado natural</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Horario y Ubicación con mapa -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-low flex flex-col" id="ubicacion">
+<div class="flex flex-col mb-space-lg">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-1">El Estudio</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Visítanos en Zapopan</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Un espacio privado y sereno diseñado para tu confort.
+      </p>
+</div>
+<!-- Datos informativos -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">schedule</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Horario de Atención</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light mt-0.5">
+            Lunes a sábado: 10:00 am – 7:00 pm<br/>Domingos: Cerrado
+          </span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">location_on</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Dirección</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light mt-0.5">
+            Av. Patria #1420, Colonia Providencia / Lomas del Valle, Zapopan, Jalisco.
+          </span>
+<span class="font-label-sm text-label-sm text-primary mt-1 font-medium">Atención únicamente previa cita</span>
+</div>
+</div>
+</div>
+<!-- Contenedor de mapa estilizado -->
+<div class="relative w-full h-56 rounded-xl overflow-hidden shadow-sm bg-surface-container flex flex-col justify-between p-space-md" data-location="Av. Patria 1420, Zapopan, Jalisco" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzg1Zeuhi-IFEVufrsjEMncVvWpA55esNIUKg1lH1y34ziIjykfUQppWi6Ptf2vpfy5LERnpIHsT0bvkuV49u3L3iwmtx4LBZAQLux-HGTTZsg_82gapVBOt7vA_ZWUtcalMa85pL59M9L32hN8cj49u5TCGk_83XFZDjIu30ZRHKE31HBrUEigAoPAsbHOfvEqdpLdvKp2bW7wnqsSOps7HP4ItEUTkOm_7cmOII')">
+<!-- Pin y etiqueta superior -->
+<div class="self-start px-space-sm py-1 rounded-lg bg-surface/90 backdrop-blur-sm shadow-sm flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Zapopan Atelier</span>
+</div>
+<!-- Botones sobre el mapa -->
+<div class="flex items-center gap-space-xs mt-auto">
+<a class="flex-1 py-space-xs px-space-sm bg-surface-container-lowest text-on-surface font-label-md text-label-md text-center rounded-lg shadow-sm hover:bg-surface transition-colors" href="https://maps.google.com/?q=Av.+Patria+1420+Zapopan+Jalisco" rel="noopener noreferrer" target="_blank">
+          Abrir en Google Maps
+        </a>
+<a class="flex-1 py-space-xs px-space-sm bg-primary text-on-primary font-label-md text-label-md text-center rounded-lg shadow-sm hover:bg-primary-container transition-colors" href="https://maps.google.com/?daddr=Av.+Patria+1420+Zapopan+Jalisco" rel="noopener noreferrer" target="_blank">
+          Cómo llegar
+        </a>
+</div>
+</div>
+</section>
+<!-- 8. Pie de página (Footer) -->
+<footer class="px-margin-mobile pt-space-xl pb-space-lg bg-surface flex flex-col items-center text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Nails by Dani</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-1 max-w-xs">
+      Manicura de autor y arte botánico en uñas. Creado con calma y dedicación en Zapopan.
+    </p>
+<!-- Redes sociales directas -->
+<div class="flex items-center gap-space-lg my-space-md">
+<a class="flex flex-col items-center gap-1 text-on-surface hover:text-primary transition-colors" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 2C6.511 2 2.024 6.488 2.024 12.008c0 1.839.502 3.565 1.378 5.062L2 22l5.062-1.33a9.96 9.96 0 0 0 4.969 1.338h.004c5.517 0 10.007-4.488 10.007-10.008C22.042 6.488 17.551 2 12.031 2zm0 18.293a8.27 8.27 0 0 1-4.223-1.155l-.303-.18-3.137.823.837-3.06-.197-.314a8.277 8.277 0 0 1-1.272-4.399c0-4.57 3.717-8.288 8.292-8.288 2.215 0 4.298.863 5.864 2.43a8.23 8.23 0 0 1 2.427 5.863c-.001 4.572-3.722 8.289-8.288 8.289z"></path>
+</svg>
+<span class="font-label-sm text-label-sm">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface hover:text-primary transition-colors" href="https://instagram.com/" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+<span class="font-label-sm text-label-sm">@nailsbydani.zpn</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface hover:text-primary transition-colors" href="https://facebook.com/" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path>
+</svg>
+<span class="font-label-sm text-label-sm">Facebook</span>
+</a>
+</div>
+<div class="mt-space-sm pt-space-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">Citas exclusivas vía mensaje · Zapopan, Jal.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-light">© 2024 Nails by Dani. Todos los derechos reservados.</span>
+</div>
+</footer>
+</div></main><aside class="fixed bottom-24 right-margin-mobile z-50"><a aria-label="WhatsApp Concierge" class="flex items-center justify-center w-14 h-14 rounded-full bg-secondary text-on-secondary shadow-[0_8px_24px_-4px_rgba(44,105,76,0.35)] transition-transform hover:scale-105 active:scale-95" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[26px]">chat</span></a></aside><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(42,29,24,0.04)]" data-active-classes="text-primary font-title-md"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] transition-colors text-primary font-title-md" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-label-sm text-label-sm mt-0.5">Estudio</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="servicios" href="#servicios"><span class="material-symbols-outlined text-[22px]">design_services</span><span class="font-label-sm text-label-sm mt-0.5">Menú</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="galeria-editorial" href="#lookbook"><span class="material-symbols-outlined text-[22px]">photo_camera</span><span class="font-label-sm text-label-sm mt-0.5">Lookbook</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="estudio-zapopan" href="#ubicacion"><span class="material-symbols-outlined text-[22px]">pin_drop</span><span class="font-label-sm text-label-sm mt-0.5">Zapopan</span></a></div></nav></body></html>
